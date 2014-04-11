@@ -1,6 +1,7 @@
 <div style="background-color:cyan;height:1000px;" class="container-fluid">
   <div class="row-fluid">
     <div class="span2">
+    	<h1>Android Devices</h1>
       <!--Sidebar content-->
 
       <b>Search:</b> <input ng-model="query" ng-change="refreshiScroll()" >
@@ -19,7 +20,7 @@
 				<li ng-repeat="phone in phones | filter:query | orderBy:orderProp" class="thumbnail">
 				  <a href="#/phones/{{phone.id}}" class="thumb"><img ng-src="{{phone.imageUrl}}"></a>
 				  <b>{{phone.name}}</b>
-				  <p>{{phone.snippet}}</p>
+				  <i>{{phone.snippet}}</i>
 				</li>
 			
 		   </ul>	   
